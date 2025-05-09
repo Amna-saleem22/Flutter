@@ -1,16 +1,24 @@
-# app
+# Flutter Column and Row Layout Demo
 
-A new Flutter project.
+This Flutter project demonstrates the use of `Column` and `Row` widgets for building structured layouts. It includes multiple `Container` widgets with different colors arranged vertically and horizontally, along with a styled `Text` widget.
 
-## Getting Started
+## 🧱 Widgets Used
 
-This project is a starting point for a Flutter application.
+- `Padding`
+- `Column`
+- `Row`
+- `Container`
+- `Text`
 
-A few resources to get you started if this is your first Flutter project:
+## 📐 Layout Structure
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+- A `Column` displays a vertical stack of colored boxes.
+- Inside the `Column`, a `Row` is used to display more boxes side by side.
+- One `Container` in the `Row` includes a `Text` widget styled with a larger font.
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## 🚀 Getting Started
+
+### Prerequisites
+
+- Flutter SDK: [Install Flutter](https://flutter.dev/docs/get-started/install)
+- An IDE like VS Code or Android Studio
