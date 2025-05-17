@@ -4,11 +4,12 @@ This Flutter project demonstrates the use of ListView widgets for building struc
 
 ## Widgets Used
 
-.Container
-.Text
+~`Container`
+~`Text`
 
 
-🚀 Getting Started
-Prerequisites
-Flutter SDK: Install Flutter
-An IDE like VS Code or Android Studio
+##  🚀 Getting Started
+
+##      Prerequisites
+            Flutter SDK: Install Flutter
+            An IDE like VS Code or Android Studio
