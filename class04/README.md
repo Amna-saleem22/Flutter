@@ -8,11 +8,6 @@ This Flutter project demonstrates the use of ListView widgets for building struc
 - `Text`
 
 
-
-
-- `Container`
-- `Text`
-
 ##  🚀 Getting Started
 
 ##      Prerequisites
