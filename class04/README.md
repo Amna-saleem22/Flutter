@@ -1,16 +1,14 @@
-# class04
+# Flutter ListView Demo
 
-A new Flutter project.
+This Flutter project demonstrates the use of ListView widgets for building structured layouts.
 
-## Getting Started
+## Widgets Used
 
-This project is a starting point for a Flutter application.
+.Container
+.Text
 
-A few resources to get you started if this is your first Flutter project:
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+🚀 Getting Started
+Prerequisites
+Flutter SDK: Install Flutter
+An IDE like VS Code or Android Studio
