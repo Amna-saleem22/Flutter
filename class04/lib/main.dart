@@ -1,3 +1,5 @@
+import 'dart:nativewrappers/_internal/vm/lib/developer.dart';
+
 import 'package:flutter/material.dart';
 
 void main() {
@@ -13,7 +15,7 @@ class MyApp extends StatelessWidget {
   }
 }
 
-final List<String> fruits = [
+var arrFurite = [
   'Apple',
   'Banana',
   'Orange',
@@ -33,17 +35,72 @@ Widget build(BuildContext context) {
       backgroundColor: Theme.of(context).colorScheme.inversePrimary,
     ),
 
-    body: ListView.builder(
-      itemCount: fruits.length,
+    drawer: Drawer(
+      child: ListView(
+        children: [
+          UserAccountsDrawerHeader(
+            accountName: Text("MOiz"),
+            accountEmail: Text("moiz345@gmail.com"),
+          ),
+
+          ListTile(
+            leading: Icon(Icons.home, color: Colors.amber),
+            title: Text("home"),
+            onTap: () {},
+          ),
+
+          ListTile(
+            leading: Icon(Icons.shopify, color: Colors.amber),
+            title: Text("Shopify"),
+            onTap: () {},
+          ),
+
+          ListTile(
+            leading: Icon(Icons.settings, color: Colors.amber),
+            title: Text("Setting"),
+            onTap: () {},
+          ),
+          ListTile(
+            leading: Icon(Icons.cabin, color: Colors.amber),
+            title: Text("Setting"),
+            onTap: () {},
+          ),
+
+          ListTile(
+            leading: Icon(Icons.home, color: Colors.amber),
+            title: Text("home"),
+            onTap: () {},
+          ),
+        ],
+      ),
+    ),
+
+    body: ListView.separated(
       itemBuilder: (context, index) {
         return ListTile(
-          leading: Icon(Icons.food_bank),
-          title: Text(fruits[index]),
-          subtitle: Text('Fruit number ${index + 1}'),
-          trailing: Icon(Icons.arrow_forward),
+          leading: Text('${index + 1}'),
+          title: Text(arrFurite[index]),
+          subtitle: Text("Style"),
+          trailing: Icon(Icons.add),
         );
       },
+      itemCount: arrFurite.length,
+      separatorBuilder: (context, index) {
+        return Divider(height: 20, thickness: 2);
+      },
     ),
+
+    // ListView.builder(
+    //   itemCount: fruits.length,
+    //   itemBuilder: (context, index) {
+    //     return ListTile(
+    //       leading: Icon(Icons.food_bank),
+    //       title: Text(fruits[index]),
+    //       subtitle: Text('Fruit number ${index + 1}'),
+    //       trailing: Icon(Icons.arrow_forward),
+    //     );
+    //   },
+    // ),
 
     // body: ListView(
     //   padding: const EdgeInsets.all(8),
